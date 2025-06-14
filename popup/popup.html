@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+  AI Text Formatter - Popup
+  Owner: MMK
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>AI Text Formatter</h1>
+      <label class="master-toggle">
+        <input type="checkbox" id="masterToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+    
+    <div class="stats">
+      Processed today: <span id="processedCount">0</span> texts
+    </div>
+    
+    <div class="format-option">
+      <label>
+        <input type="checkbox" id="forceAsPlainText" checked>
+        Always paste as plain text (like "Paste and Match Style")
+      </label>
+    </div>
+    
+    <div class="websites-container">
+      <h2>Enabled Websites</h2>
+      <div id="websitesList" class="websites-list"></div>
+    </div>
+    
+    <div class="add-website">
+      <input type="text" id="newWebsite" placeholder="Add website (e.g., example.com)">
+      <button id="addWebsiteBtn">Add</button>
+    </div>
+    
+    <div id="errorMessage" class="error-message"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
